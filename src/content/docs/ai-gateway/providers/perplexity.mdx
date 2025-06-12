@@ -3,6 +3,8 @@ title: Perplexity
 pcx_content_type: get-started
 ---
 
+import { Render } from "~/components";
+
 [Perplexity](https://www.perplexity.ai/) is an AI powered answer engine.
 
 ## Endpoint
@@ -10,6 +12,15 @@ pcx_content_type: get-started
 ```txt
 https://gateway.ai.cloudflare.com/v1/{account_id}/{gateway_id}/perplexity-ai
 ```
+
+## Prerequisites
+
+When making requests to Perplexity, ensure you have the following:
+
+- Your AI Gateway Account ID.
+- Your AI Gateway gateway name.
+- An active Perplexity API token.
+- The name of the Perplexity model you want to use.
 
 ## Examples
 
@@ -58,3 +69,17 @@ const chatCompletion = await perplexity.chat.completions.create({
 	max_tokens: maxTokens,
 });
 ```
+
+<Render
+	file="chat-completions-providers"
+	product="ai-gateway"
+	params={{
+		name: "Perplexity",
+		jsonexample: `
+{
+	"model": "perplexity/{model}"
+}`
+
+    }}
+
+/>

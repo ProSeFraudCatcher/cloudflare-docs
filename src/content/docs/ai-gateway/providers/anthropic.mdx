@@ -3,13 +3,24 @@ title: Anthropic
 pcx_content_type: get-started
 ---
 
+import { Render } from "~/components";
+
 [Anthropic](https://www.anthropic.com/) helps build reliable, interpretable, and steerable AI systems.
 
 ## Endpoint
 
 ```txt
-https://gateway.ai.cloudflare.com/v1/{account_id}/{gateway_id}/anthropic`
+https://gateway.ai.cloudflare.com/v1/{account_id}/{gateway_id}/anthropic
 ```
+
+## Prerequisites
+
+When making requests to Anthropic, ensure you have the following:
+
+- Your AI Gateway Account ID.
+- Your AI Gateway gateway name.
+- An active Anthropic API token.
+- The name of the Anthropic model you want to use.
 
 ## Examples
 
@@ -56,3 +67,17 @@ const message = await anthropic.messages.create({
 	max_tokens: maxTokens,
 });
 ```
+
+<Render
+	file="chat-completions-providers"
+	product="ai-gateway"
+	params={{
+		name: "Anthropic",
+		jsonexample: `
+{
+	"model": "anthropic/{model}"
+}`
+
+    }}
+
+/>

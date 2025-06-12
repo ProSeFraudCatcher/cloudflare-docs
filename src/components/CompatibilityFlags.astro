@@ -1,6 +1,6 @@
 ---
 import { z } from "astro:schema";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import AnchorHeading from "./AnchorHeading.astro";
 
 type Props = z.infer<typeof props>;
@@ -16,11 +16,16 @@ let flags = await getCollection("compatibility-flags");
 if (experimental) {
 	flags = flags.filter((x) => x.data.experimental);
 }
+
+flags.sort(
+	(a, b) =>
+		new Date(b.data.sort_date).getTime() - new Date(a.data.sort_date).getTime(),
+);
 ---
 
 {
 	flags.map(async (entry) => {
-		const { Content } = await entry.render();
+		const { Content } = await render(entry);
 
 		return (
 			<>

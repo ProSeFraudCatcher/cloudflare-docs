@@ -35,7 +35,7 @@ You should use Delegated DCV when all of the following conditions are true:
 
 :::note[Delegated DCV and origin certificates]
 
-As explained in the [announcement blog post](https://blog.cloudflare.com/introducing-dcv-delegation/), currently, you can only delegate DCV to one provider at a time. If you also issue publicly trusted certificates for the same hostname for your [origin server](/ssl/concepts/#origin-certificate), this will no longer be possible. You can use [Cloudflare Origin CA certificates](/ssl/origin-configuration/origin-ca/) instead.
+As explained in the [announcement blog post](https://blog.cloudflare.com/introducing-dcv-delegation/), currently, you can only delegate DCV to one provider at a time. If you also issue publicly trusted certificates for the same hostname for your [origin server](/ssl/concepts/#origin-certificate), this will no longer be possible. You can use [Cloudflare origin CA certificates](/ssl/origin-configuration/origin-ca/) instead.
 :::
 
 ## Setup
@@ -93,7 +93,9 @@ If you use a `dig` command to test, you should only be able see the placed token
 This is because Cloudflare places the tokens when needed and then cleans them up.
 
 ```sh
-dig TXT +noadditional +noquestion +nocomments +nocmd +nostats _acme-challenge.example.com. @1.1.1.1_acme-challenge.example.com. 3600    IN    CNAME    example.com.<COPIED_VALIDATION_URL>
+dig TXT +noadditional +noquestion +nocomments +nocmd +nostats _acme-challenge.example.com. @1.1.1.1
+
+_acme-challenge.example.com. 3600    IN    CNAME    example.com.<COPIED_VALIDATION_URL>
 ```
 
 ### Renewal
@@ -115,4 +117,4 @@ Once the hostname becomes resolvable again, [Delegated DCV](/ssl/edge-certificat
 
 ### Moved domains
 
-If you [move your zone to another account](/fundamentals/setup/manage-domains/move-domain/), you will need to update the `CNAME` record at your authoritative DNS provider with a new validation URL.
+If you [move your zone to another account](/fundamentals/manage-domains/move-domain/), you will need to update the `CNAME` record at your authoritative DNS provider with a new validation URL.

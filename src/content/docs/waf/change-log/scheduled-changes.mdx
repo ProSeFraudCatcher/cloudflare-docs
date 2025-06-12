@@ -1,268 +1,127 @@
 ---
 type: table
-pcx_content_type: changelog
+pcx_content_type: release-notes
 title: Scheduled changes
 sidebar:
   order: 2
 tableOfContents: false
 ---
 
-import { RuleID } from "~/components";
+import { RSSButton, RuleID } from "~/components";
+
+<RSSButton href="/waf/change-log/index.xml" />
 
 <table style="width: 100%">
-	<thead>
-		<tr>
-			<th>Announcement Date</th>
-			<th>Release Date</th>
-			<th>Release Behavior</th>
-			<th>Legacy Rule ID</th>
-			<th>Rule ID</th>
-			<th>Description</th>
-			<th>Comments</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100678</td>
-			<td>
-					<RuleID id="3a321b10270b42549ac201009da08beb" />
-			</td>
-			<td>Pandora FMS - Remote Code Execution - CVE:CVE-2024-11320</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100679</td>
-			<td>
-					<RuleID id="1fe510368b4a47dda90363c2ecdf3d02" />
-			</td>
-			<td>Palo Alto Networks - Remote Code Execution - CVE:CVE-2024-0012, CVE:CVE-2024-9474</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100680</td>
-			<td>
-					<RuleID id="b7ba636927b44ee288b9a697a40f2a35" />
-			</td>
-			<td>Ivanti - Command Injection - CVE:CVE-2024-37397</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100681</td>
-			<td>
-					<RuleID id="6bd9b07c8acc4beeb17c8bee58ae3c89" />
-			</td>
-			<td>Really Simple Security - Auth Bypass - CVE:CVE-2024-10924</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100682</td>
-			<td>
-					<RuleID id="c86e79e15a4a4307870f6f77e37f2da6" />
-			</td>
-			<td>Magento - XXE - CVE:CVE-2024-34102</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100683</td>
-			<td>
-					<RuleID id="945f41b48be9485f953116015054c752" />
-			</td>
-			<td>CyberPanel - Remote Code Execution - CVE:CVE-2024-51567</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100684</td>
-			<td>
-					<RuleID id="aec9a2e554a34a8fa547d069dfe93d7b" />
-			</td>
-			<td>Microsoft SharePoint - Remote Code Execution - CVE:CVE-2024-38094, CVE:CVE-2024-38024, CVE:CVE-2024-38023</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100685</td>
-			<td>
-					<RuleID id="e614dd46c1ce404da1909e841454c856" />
-			</td>
-			<td>CyberPanel - Remote Code Execution - CVE:CVE-2024-51568</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100686</td>
-			<td>
-					<RuleID id="685a4edf68f740b4a2c80d45e92362e5" />
-			</td>
-			<td>Seeyon - Remote Code Execution</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100687</td>
-			<td>
-					<RuleID id="204f9d948a124829acb86555b9f1c9f8" />
-			</td>
-			<td>WordPress - Remote Code Execution - CVE:CVE-2024-10781, CVE:CVE-2024-10542</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-			<td>2024-12-09</td>
-			<td>2025-01-06</td>
-			<td>Block</td>
-			<td>100688</td>
-			<td>
-					<RuleID id="19587024724e49329d5b482d0d7ca374" />
-			</td>
-			<td>ProjectSend - Remote Code Execution - CVE:CVE-2024-11680</td>
-			<td>This is a New Detection</td>
-		</tr>
-		<tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100689</td>
-        <td>
-            <RuleID id="fa49213e55484f6c824e0682a5260b70" />
-        </td>
-        <td>Palo Alto GlobalProtect - Remote Code Execution - CVE:CVE-2024-5921</td>
-        <td>This is a New Detection</td>
+  <thead>
+    <tr>
+      <th>Announcement Date</th>
+      <th>Release Date</th>
+      <th>Release Behavior</th>
+      <th>Legacy Rule ID</th>
+      <th>Rule ID</th>
+      <th>Description</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100783</td>
+      <td>
+        <RuleID id="233bcf0ce50f400989a7e44a35fefd53" />
+      </td>
+      <td>Cisco IOS XE - Remote Code Execution - CVE:CVE-2025-20188</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100690</td>
-        <td>
-            <RuleID id="11b5fc23e85b41ca90316bddd007118b" />
-        </td>
-        <td>Ivanti - Remote Code Execution - CVE:CVE-2024-37404</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100784</td>
+      <td>
+        <RuleID id="9284e3b1586341acb4591bfd8332af5d" />
+      </td>
+      <td>Axios - SSRF - CVE:CVE-2024-39338</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100691</td>
-        <td>
-            <RuleID id="aaeada52bcc840598515de6cc3e49f64" />
-        </td>
-        <td>Array Networks - Remote Code Execution - CVE:CVE-2023-28461</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100785</td>
+      <td>
+        <RuleID id="2672b175a25548aa8e0107b12e1648d2" />
+      </td>
+      <td>vBulletin - Remote Code Execution - CVE:CVE-2025-48827, CVE:CVE-2025-48828</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100692</td>
-        <td>
-            <RuleID id="e2c7ce1ecd6847219f8d9aedfcc6f5bb" />
-        </td>
-        <td>CyberPanel - Remote Code Execution - CVE:CVE-2024-51378</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100786</td>
+      <td>
+        <RuleID id="b77a19fb053744b49eacdab00edcf1ef" />
+      </td>
+      <td>Invision Community - Remote Code Execution - CVE:CVE-2025-47916</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100693</td>
-        <td>
-            <RuleID id="84d481b1f49c4735afa2fb2bb615335e" />
-        </td>
-        <td>Symfony Profiler - Auth Bypass - CVE:CVE-2024-50340</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100791</td>
+      <td>
+        <RuleID id="aec2274743064523a9667248d6f5eb48" />
+      </td>
+      <td>CrushFTP - SSRF - CVE:CVE-2025-32102, CVE:CVE-2025-32103</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100694</td>
-        <td>
-            <RuleID id="9f258f463f9f4b26ad07e3c209d08c8a" />
-        </td>
-        <td>Citrix Virtual Apps - Remote Code Execution - CVE:CVE-2024-8069</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100792</td>
+      <td>
+        <RuleID id="7b80e1f5575d4d99bb7d56ae30baa18a" />
+      </td>
+      <td>Roundcube - Remote Code Execution - CVE:CVE-2025-49113</td>
+      <td>This is a New Detection</td>
+    </tr>
+   <tr>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100793</td>
+      <td>
+        <RuleID id="52d76f9394494b0382c7cb00229ba236" />
+      </td>
+      <td>XSS - Ontoggle</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100695</td>
-        <td>
-            <RuleID id="b490d6edcfec4028aef45cf08aafb2f5" />
-        </td>
-        <td>MSMQ Service - Remote Code Execution - CVE:CVE-2023-21554</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-09</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100794</td>
+      <td>
+        <RuleID id="d38e657bd43f4d809c28157dfa338296" />
+      </td>
+      <td>WordPress WooCommerce Plugin - Dangerous File Upload - CVE:CVE-2025-47577</td>
+      <td>This is a New Detection</td>
     </tr>
     <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100696</td>
-        <td>
-            <RuleID id="c8f65bc9eeef4665820ecfe411b7a8c7" />
-        </td>
-        <td>Nginxui - Remote Code Execution - CVE:CVE-2024-49368</td>
-        <td>This is a New Detection</td>
+      <td>2025-06-10</td>
+      <td>2025-06-16</td>
+      <td>Log</td>
+      <td>100795</td>
+      <td>
+        <RuleID id="b6558cac8c874bd6878734057eb35ee6" />
+      </td>
+      <td>Next.js - Auth Bypass</td>
+      <td>This is a New Detection</td>
     </tr>
-    <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100697</td>
-        <td>
-            <RuleID id="d5f2e133e34640198d06d7b345954c7e" />
-        </td>
-        <td>Apache ShardingSphere - Remote Code Execution - CVE:CVE-2022-22733</td>
-        <td>This is a New Detection</td>
-    </tr>
-    <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100698</td>
-        <td>
-            <RuleID id="c34432e257074cffa9fa15f3f5311209" />
-        </td>
-        <td>Mitel MiCollab - Auth Bypass - CVE:CVE-2024-41713</td>
-        <td>This is a New Detection</td>
-    </tr>
-    <tr>
-        <td>2024-12-16</td>
-        <td>2025-01-06</td>
-        <td>Block</td>
-        <td>100699</td>
-        <td>
-            <RuleID id="3bda15acd73a4b55a5f60cd2b3e5e46e" />
-        </td>
-        <td>Apache Solr - Auth Bypass - CVE:CVE-2024-45216</td>
-        <td>This is a New Detection</td>
-    </tr>
-	</tbody>
+  </tbody>
 </table>

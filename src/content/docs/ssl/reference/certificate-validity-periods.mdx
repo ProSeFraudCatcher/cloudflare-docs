@@ -6,8 +6,7 @@ sidebar:
 head:
   - tag: title
     content: Validity periods and renewal
-description: Review information about available validity periods for your
-  Cloudflare SSL certificates.
+description: Learn about Cloudflare SSL certificate validity periods, auto renewal processes, and the benefits of shorter validity periods for enhanced security.
 
 ---
 
@@ -20,7 +19,6 @@ If a certificate fails to renew and another valid certificate exists for the hos
 :::note
 For information regarding custom certificates (managed by you), consider this other page on [renewal and expiration](/ssl/edge-certificates/custom-certificates/renewing/).
 :::
-
 ## Universal SSL
 
 <Render file="universal-ssl-validity" />
@@ -31,7 +29,7 @@ When you order an [advanced certificate](/ssl/edge-certificates/advanced-certifi
 
 | Certificate validity period | Auto renewal period | Notes                                                                                  |
 | --------------------------- | ------------------- | -------------------------------------------------------------------------------------- |
-| 1 year                      | 30 days             | Soon to be [deprecated](/ssl/reference/migration-guides/digicert-update/)              |
+| 1 year                      | 30 days             | Limited to Enterprise customers using [advanced certificates](/ssl/edge-certificates/advanced-certificate-manager/) with [SSL.com](/ssl/reference/certificate-authorities/#sslcom)              |
 | 3 months                    | 30 days             |                                                                                        |
 | 1 month                     | 7 days              | Not supported by [Let's Encrypt](/ssl/reference/certificate-authorities/#lets-encrypt) |
 | 2 weeks                     | 3 days              | Not supported by [Let's Encrypt](/ssl/reference/certificate-authorities/#lets-encrypt) |
